@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'montserrat alternates-regular';
+    src: url('../fonts/MontserratAlternates-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat alternates-regular', sans-serif;
+}

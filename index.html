@@ -13,12 +13,12 @@
         <img src="src/img/logo.png" alt="логотип">
         <p class="logo_name">MultiTrans</p>
     </div>
-    <p class="header_text">стоимость</p>
-    <p class="header_text">тариф</p>
-    <p class="header_text">магазины</p>
+    <a href="#"><p class="header_text">стоимость</p></a>
+    <a href="#"><p class="header_text">тариф</p></a>
+        <a href="#"> <p class="header_text">магазины</p></a>
     <p></p>
-    <input type="button" value="войти" class="header_login_button">
-    <input type="button" value="регистрация" class="header_registration_button">
+    <a href="#" class="header_login_button">Войти</a>
+    <a href="#" class="header_registration_button">регистрация</a>
 </header>
 
 <main>
@@ -32,7 +32,7 @@
                     Покупайте товары из местных интернет-магазинов, а мы получим и доставим в ваш город.
                 </p>
             </div>
-            <input type="button" value="Заказать" class="order-button">
+            <a href="#" class="order-button">Заказать</a>
         </div>
         <div class="preview_section_image-block">
             <img src="src/img/preview.png" alt="preview фото">
@@ -51,7 +51,7 @@
                         Индия
                     </p>
                     <p class="countries_section_card_info_text_dop-info">
-                        от 15 дней, от 2000₹
+                        От 15 дней, от 2000₹
                     </p>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                         США
                     </p>
                     <p class="countries_section_card_info_text_dop-info">
-                        от 12 дней, от 20$
+                        От 12 дней, от 20$
                     </p>
                 </div>
             </div>
@@ -83,7 +83,7 @@
                         Китай
                     </p>
                     <p class="countries_section_card_info_text_dop-info">
-                        от 17 дней, от 40¥
+                        От 17 дней, от 40¥
                     </p>
                 </div>
             </div>
@@ -100,12 +100,16 @@
         </div>
         <div class="input_group" style="grid-column: 1/3">
             <img src="src/img/map.png" alt="Иконка карты">
-            <input type="text" id="city-input" class="input_field" placeholder="ВАШ ГОРОД">
+            <label>
+                <input type="text" id="city-input" class="input_field" placeholder="ВАШ ГОРОД">
+            </label>
         </div>
 
         <div class="input_group" style="grid-column: 3/5">
             <img src="src/img/weight.png" alt="Иконка веса">
-            <input type="text" id="weight-input" class="input_field" placeholder="ВЕС ПОСЫЛКИ (КГ.)">
+            <label>
+                <input type="text" id="weight-input" class="input_field" placeholder="ВЕС ПОСЫЛКИ (КГ.)">
+            </label>
         </div>
 
 
@@ -143,7 +147,7 @@
             <img src="src/img/eyes.png" alt="Иконка глаза">
             <div class="advantages_section_card_text">
                 <h3 class="advantages_section_card_title">Полное </h3>
-                <p class="advantages_section_card_text">Отслеживание посылки</p>
+                <p class="advantages_section_card_text_text">Отслеживание посылки</p>
             </div>
         </div>
 
@@ -151,7 +155,7 @@
             <img src="src/img/cooperative-handshake.png" alt="Иконка рукопожатия">
             <div class="advantages_section_card_text">
                 <h3 class="advantages_section_card_title">B2B</h3>
-                <p class="advantages_section_card_text">Работаем с компаниями</p>
+                <p class="advantages_section_card_text_text">Работаем с компаниями</p>
             </div>
         </div>
     </section>
@@ -165,7 +169,7 @@
                 дешевле, чем перекупы просят в России.
             </p>
             <p class="advantage_price_section_source">
-                <span class="advantage_price_section_source_text">цены взяты с сайта</span>
+                <span class="advantage_price_section_source_text">Цены взяты с сайта</span>
                 <span class="advantage_price_section_source_link"> amazon.com</span>
             </p>
         </div>
@@ -210,17 +214,15 @@
             <h2 class="delivery_usa_title">Доставляем из магазинов США</h2>
             <div class="delivery_usa_text-block">
                 <p class="delivery_usa_text">
-                    <span class="delivery_usa_text_bold">Для частных клиентов</span>
-                    <span>: </span>
+                    <span class="delivery_usa_text_bold">Для частных клиентов</span><span>: </span>
                     <span class="delivery_usa_text_regular">доставим ваши посылки от 12 дней и от $20, дадим возможность следить за процессом 24/7, проведем через таможню. Доставим покупки вам или вашим друзьям: в ближайший пункт выдачи или лично в руки.</span>
                 </p>
                 <p class="delivery_usa_text">
-                    <span class="delivery_usa_text_bold">Для оптовых клиентов</span>
-                    <span>: </span>
+                    <span class="delivery_usa_text_bold">Для оптовых клиентов</span><span>: </span>
                     <span class="delivery_usa_text_regular">рассортируем посылки, соберем паспортные данные ваших клиентов и организуем доставку напрямую конечным заказчикам. По сниженным ценам: от $18</span>
                 </p>
             </div>
-            <input type="button" value="Заказать" class="order-button delivery_usa_order-button">
+            <a href="#" class="order-button delivery_usa_order-button">Заказать</a>
         </div>
     </section>
 
@@ -240,7 +242,7 @@
                     <p class="advantage_offer_card_text">Что можно выгодно купить в США?</p>
                 </div>
             </div>
-            <input type="button" value="Заказать" class="order-button advantage_offer_button">
+            <a href="#" class="order-button advantage_offer_button">Заказать</a>
         </div>
         <div class="advantage_offer_image-block">
             <img src="src/img/multi.png" alt="Красивая картинка с коробками и девушкой с зеркалом">
@@ -358,7 +360,7 @@
             </div>
         </div>
         <div class="where-to-buy_section_button-content">
-        <input type="button" value="Заказать" class="order-button where-to-buy_order-button">
+            <a href="#" class="order-button where-to-buy_order-button">Заказать</a>
         </div>
     </section>
 </main>
@@ -390,7 +392,7 @@
             <p class="footer_hotline-text">Горячая линия по вопросам доставки из зарубежных интернет-магазинов:</p>
             <p class="footer_phone">+7 800 555 35 35</p>
             <p class="footer_schedule">С 7:00 до 19:00 (MSK)</p>
-            <p class="footer_support-service">служба поддержки</p>
+            <p class="footer_support-service">Служба поддержки</p>
         </div>
 
         <hr class="footer_divider">
@@ -407,8 +409,5 @@
 
     </div>
 </footer>
-
-</body>
-</html>
 </body>
 </html>

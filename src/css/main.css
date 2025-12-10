@@ -22,26 +22,30 @@
     font-display: swap;
 }
 
+a, a:hover, a:focus, a:active {
+    color: black;
+    text-decoration: none;
+}
+
 :root {
     --color-base-accent: #FF004C;
     --color-dop-accent: #880028;
     --color-base: #FFF5F5;
     --color-dop: #FFDFDF;
-
     --font-bold: 'montserrat alternates-bold', sans-serif;
     --font-semibold: 'montserrat alternates-semibold', sans-serif;
+    --font-regular: 'montserrat alternates-regular', sans-serif;
 }
-
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'montserrat alternates-regular', sans-serif;
+    font-family: var(--font-regular), sans-serif;
 }
 
 header {
-    width : auto;
-    height : 70px;
+    width: auto;
+    height: 70px;
     max-width: 1762px;
     display: grid;
     margin: auto;
@@ -57,31 +61,50 @@ header {
 }
 
 .logo_name {
-    font-family: 'montserrat alternates-bold', sans-serif;
+    font-family: var(--font-bold), sans-serif;
     font-size: 20px;
 }
 
 .header_text {
-    font-size: 20px
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.header_text:hover {
+    color: var(--color-base-accent);
+    transition: 0.3s;
 }
 
 .header_login_button {
     width: 50%;
     max-width: 96px;
-    height:48px;
+    height: 48px;
     border-radius: 10px;
     border: none;
     color: var(--color-base);
     background-color: var(--color-base-accent);
-    font-size: 20px
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_login_button:hover, .header_login_button:active, .header_login_button:focus {
+    color: var(--color-base);
 }
 
 .header_registration_button {
     width: 100%;
     max-width: 194px;
-    height:48px;
+    height: 48px;
     border: none;
-    font-size: 20px
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.header_registration_button:hover {
+    color: var(--color-base-accent);
+    transition: 0.3s;
 }
 
 .order-button {
@@ -94,6 +117,13 @@ header {
     background-color: var(--color-base-accent);
     font-size: 36px;
     font-family: var(--font-bold), serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-button:hover, .order-button:focus, .order-button:active {
+    color: var(--color-base);
 }
 
 footer {
@@ -200,7 +230,6 @@ footer {
     padding-top: 15px;
 }
 
-
 .footer_divider {
     border: none;
     height: 2px;
@@ -230,4 +259,171 @@ footer {
 .footer_copyright {
     font-size: 16px;
     color: var(--color-base);
+}
+
+@media (max-width: 1762px) {
+    header,
+    .footer_container,
+    .footer_links-block,
+    .preview_section,
+    .countries_section,
+    .price_section,
+    .advantages_section,
+    .advantage_price_section,
+    .delivery_usa_section,
+    .advantage_offer_section,
+    .partner_usa_section,
+    .how-it-works_section,
+    .where-to-buy_section {
+        max-width: 90vw;
+        gap: 40px;
+    }
+
+    header {
+        height: 60px;
+    }
+
+    .logo_name {
+        font-size: 18px;
+    }
+
+    .header_text {
+        font-size: 18px;
+    }
+
+    .header_login_button {
+        width: 80px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .header_registration_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 160px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .order-button {
+        height: 60px;
+        font-size: 28px;
+    }
+
+    footer {
+        padding: 80px 0 50px;
+        margin-top: 100px;
+    }
+
+    .footer_links-block {
+        gap: 40px;
+    }
+
+    .footer_title {
+        font-size: 20px;
+    }
+
+    .footer_link {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .footer_contacts-block {
+        margin-top: -120px;
+    }
+
+    .footer_hotline-text {
+        width: 350px;
+        font-size: 14px;
+    }
+
+    .footer_phone {
+        font-size: 28px;
+    }
+
+    .footer_schedule {
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+
+    .footer_support-service {
+        font-size: 20px;
+    }
+
+    .footer_divider {
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+
+    .footer_social-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer_copyright {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1440px) {
+    header,
+    .footer_container,
+    .footer_links-block,
+    .preview_section,
+    .countries_section,
+    .price_section,
+    .advantages_section,
+    .advantage_price_section,
+    .delivery_usa_section,
+    .advantage_offer_section,
+    .partner_usa_section,
+    .how-it-works_section,
+    .where-to-buy_section {
+        max-width: 90vw;
+        gap: 30px;
+    }
+
+    .footer_links-block {
+        gap: 30px;
+    }
+
+    .footer_contacts-block {
+        margin-top: -100px;
+    }
+
+    .footer_hotline-text {
+        width: 300px;
+    }
+}
+
+@media (max-width: 1280px) {
+    header,
+    .footer_container,
+    .footer_links-block,
+    .preview_section,
+    .countries_section,
+    .price_section,
+    .advantages_section,
+    .advantage_price_section,
+    .delivery_usa_section,
+    .advantage_offer_section,
+    .partner_usa_section,
+    .how-it-works_section,
+    .where-to-buy_section {
+        max-width: 90vw;
+        gap: 20px;
+    }
+
+    .footer_links-block {
+        gap: 20px;
+    }
+
+    .footer_contacts-block {
+        margin-top: -80px;
+    }
+
+    .footer_hotline-text {
+        width: 250px;
+    }
 }

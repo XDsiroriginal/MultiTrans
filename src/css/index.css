@@ -1,13 +1,739 @@
-@font-face {
-    font-family: 'montserrat alternates-regular';
-    src: url('../fonts/MontserratAlternates-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+.preview_section {
+    width : auto;
+    max-width: 1762px;
+    display: grid;
+    margin: auto;
+    margin-top: 140px;
+    grid-template-columns: repeat(7, auto);
+    gap: 60px;
+    align-items: center;
+
 }
 
-* {
-    margin: 0;
+.preview_section_h1 {
+    font-size: 40px;
+    font-family: var(--font-bold), serif;
+}
+
+.preview_section_p {
+    font-size: 24px;
+}
+
+.preview_section_image-block {
+    width: 100%;
+    max-width: 509px;
+    aspect-ratio: 1/1;
+    grid-column: 6/7;
+}
+
+.preview_section_text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.preview_section_right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 1/4;
+}
+
+.countries_section {
+    width : auto;
+    max-width: 1762px;
+    display: grid;
+    margin: auto;
+    margin-top: 140px;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 60px;
+    align-items: center;
+}
+
+.countries_section_card {
+    width : 100%;
+    max-width: 449px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    height: 700px;
+}
+
+.countries_section_card_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 35px;
+    margin-left: 35px;
+    gap: 18px;
+}
+
+.countries_section_card_info_image {
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+}
+
+.countries_section_card_info_image-main {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+}
+
+.india-card {
+    background-image: url("../img/india-man-mini.png");
+    grid-column: 1/3   ;
+}
+
+.countries_section_card_info_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.countries_section_card_info_text_country-name {
+    font-family: var(--font-bold), serif;
+    font-size: 32px;
+}
+
+.countries_section_card_info_text_dop-info {
+    font-family: var(--font-semibold), serif;
+    font-size: 24px;
+}
+
+.main {
+    grid-column: 3/6;
+    max-width: 702px;
+}
+
+.usa-card {
+    background-image: url("../img/america-man.png");
+}
+
+.china-card {
+    background-image: url("../img/cina-man-mini.png");
+    grid-column: 6/8;
+}
+
+.price_section {
+    display: grid;
+    column-gap: 60px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, auto);
+    width : auto;
+    max-width: 1762px;
+    margin: auto;
+    margin-top: 140px;
+    text-align: center;
+}
+
+.price_section_title {
+    font-size: 36px;
+    font-family: var(--font-bold), serif;
+    margin-bottom: 20px;
+}
+
+.price_section_subtitle {
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+
+.price_calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.input_group {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    position: relative;
+    border-bottom: 2px solid var(--color-dop-accent);
+    align-items: center;
+}
+
+.input_label {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000;
+}
+
+.input_field {
+    border: none;
+    outline: none;
+    font-size: 24px;
+    padding-bottom: 5px;
+    width: 300px;
+    text-align: left;
+    height: 51px;
+}
+
+.delivery_options {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    grid-column: 5/8;
+}
+
+.radio_label .radio {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--color-dop-accent);
+}
+
+.radio_label input {
+    appearance: none;
+}
+
+.radio_label input:checked + .radio {
+    background-color: var(--color-base-accent);
+}
+
+.radio_label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+    gap: 18px;
+}
+
+.radio_dot {
+    font-size: 24px;
+}
+
+.price_section_text {
+    grid-column: 1/8;
+    grid-row: 1;
+}
+
+.advantages_section {
+    display: flex;
+    width : auto;
+    max-width: 1762px;
+    margin: auto;
+    margin-top: 140px;
+    justify-content: space-between;
+}
+
+.advantages_section_title {
+    font-size: 36px;
+    font-family: var(--font-bold), serif;
+    margin-bottom: 60px;
+    grid-column: 1/8;
+}
+
+.advantages_section_card {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.advantages_section_card:nth-child(2) {
+    grid-column: 3/5;
+}
+
+.advantages_section_card img {
+    width: 140px;
+    height: 140px;
+}
+
+.advantages_section_card_title {
+    font-size: 36px;
+    font-family: var(--font-bold), serif;
+}
+
+.advantages_section_card_text_text {
+    font-size: 20px;
+}
+
+.advantages_section_card_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.advantage_price_section {
+    width : auto;
+    max-width: 1762px;
+    display: grid;
+    margin: auto;
+    margin-top: 140px;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 60px;
+    align-items: center;
+    padding: 70px 0;
+}
+
+.advantage_price_section_text-block {
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: auto;
+}
+
+.advantage_price_section_title {
+    font-size: 36px;
+    font-family: var(--font-bold), serif;
+    width: 449px;
+}
+
+.advantage_price_section_p {
+    font-size: 24px;
+    width: 449px;
+}
+
+.advantage_price_section_source {
+    font-size: 24px;
+    width: 449px;
+    margin-top: 12px;
+}
+
+.advantage_price_section_source_link {
+    font-family: var(--font-bold), serif;
+}
+
+.advantage_price_section_cards-block {
+    grid-column: 4/8;
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.advantage_price_section_card {
+    width: 254px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.advantage_price_section_card img {
+    width: 100%;
+    height: 254px;
+    object-fit: contain;
+}
+
+.advantage_price_section_card_info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 17px;
+}
+
+.advantage_price_section_card_title {
+    font-size: 20px;
+    font-family: var(--font-semibold), serif;
+}
+
+.advantage_price_section_card_price_russia {
+    font-size: 16px;
+    margin-top: 0.5px;
+}
+
+.advantage_price_section_card_price_usa {
+    font-size: 24px;
+    font-family: var(--font-bold), serif;
+    color: var(--color-base-accent);
+}
+
+
+
+.delivery_usa_section {
+    width : auto;
+    max-width: 1762px;
+    display: grid;
+    margin: auto;
+    margin-top: 140px;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 60px;
+    align-items: center;
     padding: 0;
+}
+
+.delivery_usa_image-block {
+    grid-column: 1/4;
+    width: 100%;
+    max-width: 509px;
+    height: 509px;
+}
+
+.delivery_usa_image-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.delivery_usa_content {
+    grid-column: 5/8;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 49px;
+}
+
+.delivery_usa_title {
+    font-size: 36px;
+    font-family: var(--font-bold), serif;
+    margin-bottom: 0;
+}
+
+.delivery_usa_text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.delivery_usa_text {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.delivery_usa_text_bold {
+    font-family: var(--font-bold), serif;
+}
+
+.delivery_usa_text_regular {
     font-family: 'montserrat alternates-regular', sans-serif;
 }
+
+.delivery_usa_order-button {
+    width: 509px;
+    max-width: 509px;
+}
+
+.advantage_offer_section {
+    width : auto;
+    max-width: 1762px;
+    display: grid;
+    margin: auto;
+    margin-top: 140px;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 60px;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid var(--color-dop);
+    padding: 0;
+    height: 929px;
+}
+
+.advantage_offer_content {
+    grid-column: 1/5;
+    margin-left: 192px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.advantage_offer_text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+    width: 573px;
+}
+
+.advantage_offer_title {
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.advantage_offer_subtitle {
+    font-size: 36px;
+}
+
+.advantage_offer_icons {
+    display: flex;
+    gap: 118px;
+    width: 510px;
+}
+
+.advantage_offer_card {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 197px;
+}
+
+.advantage_offer_card img {
+    width: 195px;
+    height: 195px;
+    aspect-ratio: 1;
+}
+
+.advantage_offer_card_text {
+    font-size: 20px;
+}
+
+.advantage_offer_button {
+    width: 510px;
+    height: 70px;
+}
+
+.advantage_offer_image-block {
+    grid-column: 5/8;
+    height: 929px;
+}
+
+.advantage_offer_image-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 10px 10px 0;
+}
+
+.partner_usa_section {
+    width : auto;
+    max-width: 1762px;
+    display: grid;
+    margin: auto;
+    margin-top: 140px;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 60px;
+    align-items: center;
+    padding: 70px 0;
+}
+
+.partner_usa_text-block {
+    grid-column: 2/5;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    height: 332px;
+    justify-content: center;
+}
+
+.partner_usa_title {
+    font-size: 36px;
+    font-family: var(--font-bold), serif;
+}
+
+.partner_usa_p {
+    font-size: 20px;
+}
+
+.partner_usa_dop-info {
+    font-size: 20px;
+}
+
+.partner_usa_dop-info_bold {
+    font-family: var(--font-bold), serif;
+}
+
+.partner_usa_image-block {
+    grid-column: 6/8;
+    width: 100%;
+    max-width: 315px;
+    height: 315px;
+    margin-top: 8px;
+}
+
+.partner_usa_image-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.how-it-works_section {
+    width : auto;
+    max-width: 1762px;
+    display: grid;
+    margin: auto;
+    margin-top: 140px;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 87px 60px;
+    align-items: flex-start;
+}
+
+.how-it-works_title {
+    grid-column: 1/8;
+    text-align: center;
+    font-size: 36px;
+    font-family: var(--font-bold), serif;
+    margin-bottom: 0;
+}
+
+.how-it-works_cards-block {
+    grid-column: 1/8;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.how-it-works_card {
+    width: 315px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+    text-align: center;
+}
+
+.how-it-works_card_icon-wrapper {
+    width: 210px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-it-works_card_icon-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.how-it-works_card_text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    align-items: center;
+}
+
+.how-it-works_card_title {
+    font-size: 24px;
+    font-family: 'montserrat alternates-medium', sans-serif;
+    font-weight: 500;
+}
+
+.how-it-works_card_text {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Where to Buy Section */
+.where-to-buy_section {
+    width : auto;
+    max-width: 1762px;
+    display: grid;
+    margin: auto;
+    margin-top: 140px;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0 60px;
+    align-items: flex-start;
+}
+
+.where-to-buy_text-block {
+    grid-column: 1/8;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+    max-width: 1216px;
+    margin: 0 auto 43px;
+}
+
+.where-to-buy_title {
+    font-size: 36px;
+    font-family: var(--font-bold), serif;
+}
+
+.where-to-buy_subtitle {
+    font-size: 24px;
+}
+
+.where-to-buy_navbar {
+    grid-column: 1/8;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 60px;
+    border-bottom: 2px solid var(--color-dop-accent);
+}
+
+.where-to-buy_navbar_link {
+    font-size: 20px;
+    padding-bottom: 12px;
+    color: var(--color-dop-accent);
+    cursor: pointer;
+    text-align: center;
+    width: calc((1762px - 6 * 60px) / 7);
+    flex-shrink: 0;
+}
+
+.where-to-buy_navbar_link.active {
+    color: var(--color-base-accent);
+}
+
+.where-to-buy_divider {
+    grid-column: 1/8;
+    width: 100%;
+    height: 2px;
+    border: none;
+    background-color: #000;
+    margin: 21px 0 70px;
+}
+
+.where-to-buy_cards-block {
+    grid-column: 1/8;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 60px;
+}
+
+.where-to-buy_card {
+    width: calc((1762px - 2 * 60px) / 3);
+    max-width: 449px;
+    background-color: var(--color-base);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    height: 419px;
+}
+
+.where-to-buy_card_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 35px;
+    margin-top: 35px;
+}
+
+.where-to-buy_card_img {
+    width: 195px;
+    height: 195px;
+    object-fit: contain;
+}
+
+.where-to-buy_card_info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 195px;
+}
+
+.where-to-buy_card_title {
+    font-size: 20px;
+    font-family: var(--font-semibold), serif;
+}
+
+.where-to-buy_card_text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.where-to-buy_order-button {
+    width: 100%;
+    margin-top:70px;
+}
+
+.where-to-buy_section_button-content {
+    display: flex;
+    justify-content: center;
+    grid-column: 1/8;
+}
+

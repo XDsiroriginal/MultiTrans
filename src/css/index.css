@@ -652,7 +652,7 @@
     color: var(--color-dop-accent);
     cursor: pointer;
     text-align: center;
-    width: calc((1762px - 6 * 60px) / 7);
+    width: 200px;
     flex-shrink: 0;
 }
 
@@ -669,7 +669,7 @@
 }
 
 .where-to-buy_card {
-    width: calc((1762px - 2 * 60px) / 3);
+    width: 547px;
     max-width: 449px;
     background-color: var(--color-base);
     border-radius: 10px;

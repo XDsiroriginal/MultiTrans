@@ -261,6 +261,29 @@ footer {
     color: var(--color-base);
 }
 
+.radio_label .radio {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--color-dop-accent);
+}
+
+.radio_label input {
+    appearance: none;
+}
+
+.radio_label input:checked + .radio {
+    background-color: var(--color-base-accent);
+}
+
+.radio_label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+    gap: 18px;
+}
+
 @media (max-width: 1762px) {
     header,
     .footer_container,

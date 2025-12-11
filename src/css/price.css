@@ -313,6 +313,12 @@
     padding-left: 70px;
     height: auto;
     border-bottom: 2px solid var(--color-dop-accent);
+    transition: 0.3s;
+}
+
+.delivery_info_input-group:hover, .delivery_info_input-group:focus {
+    border-bottom: 2px solid var(--color-base-accent);
+    transition: 0.3s;
 }
 
 .delivery_info_input-group.city-input {
@@ -347,6 +353,8 @@
     text-align: left;
     height: 51px;
 }
+
+
 
 .volume_weight_section {
     max-width: 1762px;
@@ -1013,5 +1021,591 @@
     }
     .delivery_info_radio-buttons {
         gap: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .delivery_countries_section {
+        margin-top: 80px;
+    }
+
+    .delivery_countries_title {
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+
+    .delivery_countries_line {
+        margin-top: 50px;
+    }
+
+    .delivery_countries_cards-block {
+        gap: 30px;
+        grid-template-columns: repeat(4, 1fr);
+        display: flex;
+        align-items: center;
+    }
+
+    .delivery_countries_card.india-card {
+        grid-column: 1 / span 1;
+        margin-top: 0;
+    }
+
+    .delivery_countries_card.usa-card {
+        grid-column: 2 / span 1;
+    }
+
+    .delivery_countries_card.china-card {
+        grid-column: 4 / span 1;
+        margin-top: 0;
+    }
+
+    .delivery_countries_card_info_image,
+    .delivery_countries_card_info_image-main {
+        display: none;
+    }
+
+    .delivery_countries_card_info_text_country-name:not(.main-country) {
+        font-size: 20px;
+    }
+
+    .delivery_countries_card_info_text_country-name.main-country {
+        font-size: 28px;
+    }
+
+    .additional_services_section {
+        margin-top: 80px;
+    }
+
+    .additional_services_cards-block {
+        gap: 20px;
+    }
+
+    .additional_services_card {
+        grid-column: 1 / span 7;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .additional_services_card.consolidation-card,
+    .additional_services_card.acceptance-card {
+        margin-top: 20px;
+    }
+
+    .additional_services_card_icon-wrapper {
+        width: 60px;
+        height: 60px;
+    }
+
+    .additional_services_card_price {
+        font-size: 16px;
+    }
+
+    .additional_services_card_title {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .additional_services_card_text {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .additional_services_card_link {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .delivery_info_section {
+        margin-top: 80px;
+    }
+
+    .delivery_info_container {
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .delivery_info_text-group-1 {
+        gap: 20px;
+    }
+
+    .delivery_info_icon-wrapper {
+        display: none;
+    }
+
+    .delivery_info_title {
+        font-size: 24px;
+    }
+
+    .delivery_info_description-1,
+    .delivery_info_description-2 {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .delivery_info_text-group-2 {
+        margin-top: 20px;
+    }
+
+    .delivery_info_link {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .delivery_info_divider {
+        display: none;
+    }
+
+    .delivery_info_calculator-title {
+        font-size: 24px;
+    }
+
+    .delivery_info_input-group.city-input {
+        margin-top: 30px;
+    }
+
+    .delivery_info_input-group.weight-input {
+        margin-top: 30px;
+    }
+
+    .delivery_info_input-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .delivery_info_radio-buttons {
+        margin-top: 30px;
+        gap: 10px;
+    }
+
+    .input_field {
+        font-size: 16px;
+        height: 35px;
+    }
+
+    .radio_label .radio {
+        width: 25px;
+        height: 25px;
+    }
+
+    .radio_label {
+        font-size: 16px;
+        gap: 10px;
+    }
+
+    .volume_weight_section {
+        margin-top: 80px;
+    }
+
+    .volume_weight_header {
+        gap: 20px;
+    }
+
+    .volume_weight_icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .volume_weight_title {
+        font-size: 24px;
+    }
+
+    .volume_weight_text {
+        font-size: 18px;
+        margin-left: 0;
+    }
+
+    .volume_weight_rules {
+        gap: 10px;
+    }
+
+    .volume_weight_rule_item,
+    .volume_weight_rule_item_last {
+        font-size: 18px;
+        margin-left: 0 !important;
+    }
+
+    .volume_weight_discount {
+        font-size: 24px;
+    }
+
+    .volume_weight_examples {
+        margin-top: 30px;
+        margin-left: 0;
+        gap: 10px;
+    }
+
+    .volume_weight_examples_title {
+        font-size: 18px;
+    }
+
+    .volume_weight_examples_list {
+        margin-left: 0;
+    }
+
+    .volume_weight_example_item,
+    .volume_weight_example_item_last {
+        font-size: 16px;
+        height: auto;
+    }
+
+    .oversized_cargo_section {
+        margin-top: 80px;
+    }
+
+    .oversized_cargo_title-block {
+        gap: 20px;
+    }
+
+    .oversized_cargo_icon {
+        display: none;
+    }
+
+    .oversized_cargo_title {
+        font-size: 24px;
+        margin-top: 0;
+        width: auto;
+        height: auto;
+    }
+
+    .oversized_cargo_text-one,
+    .oversized_cargo_text-two {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .oversized_cargo_text-two {
+        margin-top: 10px;
+    }
+
+    .storage_section {
+        margin-top: 80px;
+    }
+
+    .storage_container {
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .storage_header-group {
+        gap: 20px;
+    }
+
+    .storage_icon {
+        display: none;
+    }
+
+    .storage_title {
+        font-size: 24px;
+    }
+
+    .storage_subtitle,
+    .storage_subtitle-bold {
+        font-size: 20px;
+    }
+
+    .storage_text {
+        font-size: 16px;
+    }
+
+    .storage_timeline {
+        margin-top: 20px;
+    }
+
+    .timeline_labels {
+        font-size: 16px;
+    }
+
+    .timeline_labels-inbound {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .timeline_labels-inbound .timeline_label:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .timeline_labels-outbound {
+        width: 100%;
+        gap: normal;
+        justify-content: space-between;
+    }
+
+    .timeline_bar {
+        margin-top: 10px;
+    }
+
+    .timeline_prices {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .timeline_prices-inbound,
+    .timeline_prices-outbound {
+        gap: normal;
+        margin-left: 0;
+        justify-content: space-between;
+    }
+
+    .storage_description {
+        font-size: 16px;
+    }
+
+    .storage_divider {
+        display: none;
+    }
+
+    .storage_outbound {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .delivery_countries_section {
+        margin-top: 60px;
+    }
+
+    .delivery_countries_title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .delivery_countries_line {
+        margin-top: 30px;
+    }
+
+    .delivery_countries_cards-block {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .delivery_countries_card.india-card,
+    .delivery_countries_card.usa-card,
+    .delivery_countries_card.china-card {
+        grid-column: span 1;
+        margin-top: 0;
+    }
+
+    .delivery_countries_card_info_text_country-name:not(.main-country) {
+        font-size: 18px;
+    }
+
+    .delivery_countries_card_info_text_country-name.main-country {
+        font-size: 24px;
+    }
+
+    .additional_services_section {
+        margin-top: 60px;
+    }
+
+    .additional_services_cards-block {
+        gap: 15px;
+    }
+
+    .additional_services_card {
+        gap: 15px;
+    }
+
+    .additional_services_card.consolidation-card,
+    .additional_services_card.acceptance-card {
+        margin-top: 15px;
+    }
+
+    .additional_services_card_icon-wrapper {
+        display: none;
+    }
+
+    .additional_services_card_price {
+        font-size: 14px;
+    }
+
+    .additional_services_card_title {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .additional_services_card_text {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .additional_services_card_link {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .delivery_info_section {
+        margin-top: 60px;
+    }
+
+    .delivery_info_text-group-1 {
+        gap: 15px;
+    }
+
+    .delivery_info_title {
+        font-size: 20px;
+    }
+
+    .delivery_info_description-1,
+    .delivery_info_description-2 {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .delivery_info_text-group-2 {
+        margin-top: 15px;
+    }
+
+    .delivery_info_link {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .delivery_info_calculator-title {
+        font-size: 20px;
+    }
+
+    .delivery_info_input-group.city-input {
+        margin-top: 20px;
+    }
+
+    .delivery_info_input-group.weight-input {
+        margin-top: 20px;
+    }
+
+    .delivery_info_input-group {
+        padding-left: 45px;
+    }
+
+    .delivery_info_input-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .delivery_info_radio-buttons {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .input_field {
+        font-size: 14px;
+        height: 30px;
+        max-width: 100%;
+    }
+
+    .radio_label .radio {
+        width: 20px;
+        height: 20px;
+    }
+
+    .radio_label {
+        font-size: 14px;
+    }
+
+    .volume_weight_section {
+        margin-top: 60px;
+    }
+
+    .volume_weight_header {
+        gap: 15px;
+    }
+
+    .volume_weight_icon {
+        display: none;
+    }
+
+    .volume_weight_title {
+        font-size: 20px;
+    }
+
+    .volume_weight_text {
+        font-size: 16px;
+    }
+
+    .volume_weight_rule_item,
+    .volume_weight_rule_item_last {
+        font-size: 16px;
+    }
+
+    .volume_weight_discount {
+        font-size: 20px;
+    }
+
+    .volume_weight_examples {
+        margin-top: 20px;
+    }
+
+    .volume_weight_examples_title {
+        font-size: 16px;
+    }
+
+    .volume_weight_example_item,
+    .volume_weight_example_item_last {
+        font-size: 14px;
+    }
+
+    .oversized_cargo_section {
+        margin-top: 60px;
+    }
+
+    .oversized_cargo_title-block {
+        gap: 15px;
+    }
+
+    .oversized_cargo_title {
+        font-size: 20px;
+    }
+
+    .oversized_cargo_text-one,
+    .oversized_cargo_text-two {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .oversized_cargo_text-two {
+        margin-top: 8px;
+    }
+
+    .storage_section {
+        margin-top: 60px;
+    }
+
+    .storage_block {
+        gap: 20px;
+    }
+
+    .storage_header-group {
+        gap: 15px;
+    }
+
+    .storage_title {
+        font-size: 20px;
+    }
+
+    .storage_subtitle,
+    .storage_subtitle-bold {
+        font-size: 16px;
+    }
+
+    .storage_text {
+        font-size: 14px;
+    }
+
+    .timeline_labels {
+        font-size: 14px;
+    }
+
+    .timeline_prices {
+        font-size: 14px;
+    }
+
+    .storage_description {
+        font-size: 14px;
+    }
+
+    .storage_outbound {
+        margin-top: 20px;
     }
 }

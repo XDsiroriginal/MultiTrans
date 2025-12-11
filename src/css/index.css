@@ -174,7 +174,7 @@
     transition: 0.3s;
 }
 
-.input_group:hover {
+.input_group:hover, .input_group:focus {
     border-bottom: 2px solid var(--color-base-accent);
     transition: 0.3s;
 }
@@ -202,6 +202,11 @@
 
 .radio_label input:checked + .radio {
     background-color: var(--color-base-accent);
+}
+
+.radio:hover {
+    background-color: var(--color-base-accent);
+    transition: 0.3s;
 }
 
 .radio_label {
@@ -654,6 +659,12 @@
     text-align: center;
     width: 200px;
     flex-shrink: 0;
+    transition: 0.3s;
+}
+
+.where-to-buy_navbar_link:hover {
+    color: var(--color-base-accent);
+    transition: 0.3s;
 }
 
 .where-to-buy_navbar_link.active {
@@ -1322,5 +1333,443 @@
     .where-to-buy_card_img {
         width: 150px;
         height: 150px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .preview_section,
+    .countries_section,
+    .price_section,
+    .advantage_price_section,
+    .delivery_usa_section,
+    .advantage_offer_section,
+    .partner_usa_section,
+    .how-it-works_section,
+    .where-to-buy_section {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 80px;
+        max-width: 90vw;
+    }
+
+    .preview_section_image-block {
+        display: none;
+    }
+
+    .preview_section_right {
+        grid-column: 1/8;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .preview_section_h1 {
+        font-size: 30px;
+    }
+
+    .preview_section_p {
+        font-size: 18px;
+    }
+
+    .order-button {
+        width: 100%;
+        max-width: 100%;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .countries_section {
+        gap: 30px;
+    }
+
+    .countries_section_card {
+        grid-column: 1/8;
+        max-width: 100%;
+        height: 350px;
+        background-size: cover;
+        background-position: top center;
+    }
+
+    .countries_section_card.main {
+        grid-column: 1/8;
+        max-width: 100%;
+    }
+
+    .india-card, .usa-card, .china-card {
+        background-image: none;
+        background-color: var(--color-dop-accent);
+        color: var(--color-base);
+    }
+
+    .countries_section_card_info {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .price_section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .price_section_title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .price_section_subtitle {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .input_group {
+        grid-column: 1/8;
+        width: 100%;
+    }
+
+    .input_field {
+        font-size: 18px;
+        width: 100%;
+        max-width: none;
+    }
+
+    .radio_label {
+        grid-column: span 3;
+        font-size: 18px;
+        gap: 10px;
+    }
+
+    .advantages_section {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .advantages_section_card {
+        flex-direction: row;
+        text-align: left;
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .advantages_section_card img {
+        width: 90px;
+        height: 90px;
+        flex-shrink: 0;
+    }
+
+    .advantages_section_card_title {
+        font-size: 28px;
+    }
+
+    .advantages_section_card_text_text {
+        font-size: 18px;
+    }
+
+    .advantage_price_section {
+        flex-direction: column;
+    }
+
+    .advantage_price_section_text-block {
+        grid-column: 1/8;
+        margin-left: 0;
+        width: 100%;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .advantage_price_section_title,
+    .advantage_price_section_p,
+    .advantage_price_section_source {
+        width: 100%;
+    }
+
+    .advantage_price_section_title {
+        font-size: 24px;
+    }
+
+    .advantage_price_section_p,
+    .advantage_price_section_source {
+        font-size: 18px;
+    }
+
+    .advantage_price_section_cards-block {
+        grid-column: 1/8;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 30px 20px;
+    }
+
+    .advantage_price_section_card {
+        width: 45%;
+        max-width: 250px;
+        gap: 20px;
+    }
+
+    .delivery_usa_section {
+        flex-direction: column-reverse;
+    }
+
+    .delivery_usa_image-block {
+        display: none;
+    }
+
+    .delivery_usa_content {
+        grid-column: 1/8;
+        gap: 30px;
+    }
+
+    .delivery_usa_title {
+        font-size: 24px;
+    }
+
+    .delivery_usa_text {
+        font-size: 18px;
+    }
+
+    .delivery_usa_order-button {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .advantage_offer_section {
+        height: auto;
+        padding: 30px;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .advantage_offer_image-block {
+        display: none;
+    }
+
+    .advantage_offer_content {
+        grid-column: 1/8;
+        margin-left: 0;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .advantage_offer_text-block {
+        width: 100%;
+        max-width: 450px;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .advantage_offer_title,
+    .advantage_offer_subtitle {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .advantage_offer_icons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        width: auto;
+    }
+
+    .advantage_offer_card {
+        width: 45%;
+        max-width: 197px;
+    }
+
+    .advantage_offer_card img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .advantage_offer_card_text {
+        font-size: 18px;
+    }
+
+    .advantage_offer_button {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .partner_usa_section {
+        flex-direction: column-reverse;
+    }
+
+    .partner_usa_image-block {
+        display: none;
+    }
+
+    .partner_usa_text-block {
+        grid-column: 1/8;
+        height: auto;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .partner_usa_title {
+        font-size: 24px;
+    }
+
+    .partner_usa_p,
+    .partner_usa_dop-info {
+        font-size: 18px;
+    }
+
+    .how-it-works_cards-block {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .how-it-works_card {
+        width: 100%;
+        max-width: 400px;
+        flex-direction: row;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .how-it-works_title {
+        font-size: 28px;
+    }
+
+    .how-it-works_card_icon-wrapper {
+        width: 100px;
+        height: 100px;
+        flex-shrink: 0;
+    }
+
+    .how-it-works_card_title {
+        font-size: 20px;
+    }
+
+    .how-it-works_card_text {
+        font-size: 16px;
+    }
+
+    .where-to-buy_navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px 15px;
+    }
+
+    .where-to-buy_cards-block {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .where-to-buy_card {
+        max-width: 400px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .preview_section,
+    .countries_section,
+    .price_section,
+    .advantage_price_section,
+    .delivery_usa_section,
+    .advantage_offer_section,
+    .partner_usa_section,
+    .how-it-works_section,
+    .where-to-buy_section {
+        margin-top: 60px;
+        gap: 30px;
+    }
+
+    .preview_section_h1 {
+        font-size: 24px;
+    }
+
+    .preview_section_p {
+        font-size: 16px;
+    }
+
+    .order-button {
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .countries_section_card {
+        height: 300px;
+    }
+
+    .countries_section_card_info_text_country-name {
+        font-size: 24px;
+    }
+
+    .countries_section_card_info_text_dop-info {
+        font-size: 18px;
+    }
+
+    .price_section_title {
+        font-size: 20px;
+    }
+
+    .price_section_subtitle {
+        font-size: 16px;
+    }
+
+    .input_field {
+        font-size: 16px;
+    }
+
+    .radio_label {
+        grid-column: span 7;
+        font-size: 16px;
+        justify-content: flex-start;
+    }
+
+    .advantages_section_card {
+        flex-direction: column;
+        text-align: center;
+        max-width: 250px;
+    }
+
+    .advantages_section_card_title {
+        font-size: 24px;
+    }
+
+    .advantages_section_card_text_text {
+        font-size: 16px;
+    }
+
+    .advantage_price_section_cards-block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advantage_price_section_card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .delivery_usa_title {
+        font-size: 20px;
+    }
+
+    .delivery_usa_text {
+        font-size: 16px;
+    }
+
+    .advantage_offer_card {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .advantage_offer_button {
+        height: 50px;
+    }
+
+    .how-it-works_card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .where-to-buy_navbar_link {
+        font-size: 16px;
     }
 }

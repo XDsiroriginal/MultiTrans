@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="src/css/profile.css">
+    <title>Профиль</title>
+</head>
+<body>
+<header>
+    <div class="main_button">
+        <img src="src/img/logo.png" alt="логотип">
+        <p class="logo_name">MultiTrans</p>
+    </div>
+    <a href="profile.html"><p class="header_text">Личный кабинет</p></a>
+    <a href="#"><p class="header_text">посылки</p></a>
+    <a href="#"><p class="header_text">заказать</p></a>
+    <a href="#"><p class="header_text">Доп. услуги</p></a>
+    <a href="#">
+        <div class="header_balance">
+            <img src="src/img/paper-money-two.png" alt="Баланс">
+            <p class="header_balance_text">баланс: 0 ₽</p>
+        </div>
+    </a>
+    <a href="profile.html" class="header_profile">
+        <img src="src/img/user-micro.png" alt="Профиль">
+        <p class="header_profile_name">имя</p>
+    </a>
+
+    <div class="burger">
+        <img src="src/img/burger.png" alt="Бургер меню">
+    </div>
+</header>
+
+<main>
+    <section class="main">
+        <div class="profile_container">
+            <h1 class="profile_title">Личный кабинет</h1>
+            <div class="profile_top_blocks">
+                <div class="profile_block incoming_parcels_block">
+                    <div class="incoming_parcels_content">
+                        <div class="incoming_parcels_icon">
+                            <img src="src/img/box.png" alt="Посылка">
+                        </div>
+                        <div class="incoming_parcels_text">
+                            <p class="incoming_parcels_subtitle">Ожидаемые на складе</p>
+                            <h2 class="incoming_parcels_title">Входящие посылки</h2>
+                        </div>
+                        <div class="incoming_parcels_info">
+                            <p class="incoming_parcels_description">Здесь пока нет посылок</p>
+                            <p class="incoming_parcels_description">Хороший повод что-нибудь купить!</p>
+                        </div>
+                        <a href="#" class="order-button incoming_parcels_button">
+                            <span class="button_icon">+</span>
+                            добавить ожидаемую посылку
+                        </a>
+                    </div>
+                </div>
+
+                <div class="profile_block order_parcel_block">
+                    <div class="order_parcel_content">
+                        <div class="order_parcel_header">
+                            <div class="order_parcel_icon">
+                                <img src="src/img/baget.png" alt="Корзина">
+                            </div>
+                            <div class="order_parcel_text">
+                                <p class="order_parcel_subtitle">купим за вас</p>
+                                <h2 class="order_parcel_title">Закажи посылку</h2>
+                            </div>
+                        </div>
+                        <div class="order_parcel_info">
+                            <p class="order_parcel_description">Все сложные процедуры берем на себя</p>
+                            <p class="order_parcel_description">Воспользуйтесь услугой и закажи, а мы оформим и оплатим ваш заказ</p>
+                        </div>
+                        <div class="order_parcel_actions">
+                            <a href="#" class="order-button add_request_button">
+                                <span class="button_icon">+</span>
+                                добавить заявку на покупку
+                            </a>
+                            <a href="#" class="order_parcel_my_requests">мои заявки</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile_bottom_blocks">
+                <div class="profile_block user_menu_block">
+                    <div class="user_info">
+                        <div class="user_avatar">
+                            <img src="src/img/user.png" alt="Аватар пользователя">
+                        </div>
+                        <div class="user_details">
+                            <p class="user_client_number">Номер клиента #000000</p>
+                            <h3 class="user_name">Имя пользователя</h3>
+                        </div>
+                    </div>
+
+                    <nav class="user_menu">
+                        <a href="#" class="user_menu_item">
+                            <img src="src/img/user-micro.png" alt="Профиль">
+                            <p>профиль</p>
+                        </a>
+                        <a href="#" class="user_menu_item">
+                            <img src="src/img/user-group.png" alt="Получатели">
+                            <p>получатели</p>
+                        </a>
+                        <a href="#" class="user_menu_item">
+                            <img src="src/img/house.png" alt="Адреса доставки">
+                            <p>Адреса доставки</p>
+                        </a>
+                        <a href="#" class="user_menu_item">
+                            <img src="src/img/lock-one.png" alt="Сменить пароль">
+                            <p>Сменить пароль</p>
+                        </a>
+                        <div class="user_menu_divider"></div>
+                        <a href="#" class="user_menu_item logout_item">
+                            <img src="src/img/exit.png" alt="Выход">
+                            <p>Выход</p>
+                        </a>
+                    </nav>
+                </div>
+
+                <div class="profile_block_user_menu_block_left">
+
+                <div class="profile_block restricted_goods_block">
+                    <div class="restricted_goods_content">
+                        <div class="restricted_goods_icon">
+                            <img src="src/img/shildren.png" alt="Запрещено">
+                        </div>
+                        <div class="restricted_goods_text">
+                            <p class="restricted_goods_title">Запрещенные к заказу товары</p>
+                            <a href="#" class="order-button restricted_goods_button">
+                                Смотреть список
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile_block customs_limit_block">
+                    <div class="customs_limit_content">
+                        <img src="src/img/russia.png" alt="Флаг России" class="customs_limit_flag">
+                        <div class="customs_limit_text">
+                            <p class="customs_limit_subtitle">Таможенный лимит</p>
+                            <p class="customs_limit_value">200 € / 31 кг</p>
+                            <p class="customs_limit_info">На 1 посылку</p>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer_container">
+        <div class="footer_links-block">
+            <div class="footer_section">
+                <p class="footer_title">ОБЩАЯ ИНФОРМАЦИЯ</p>
+                <div class="footer_links">
+                    <a href="price.html" class="footer_link">стоимость услуг</a>
+                    <a href="#" class="footer_link">политика конфиденциальности</a>
+                    <a href="#" class="footer_link">заключение договора</a>
+                    <a href="#" class="footer_link">запрещенные товары</a>
+                    <a href="#" class="footer_link">правила отправки электроники</a>
+                </div>
+            </div>
+            <div class="footer_section">
+                <p class="footer_title">ПОМОЩЬ</p>
+                <div class="footer_links">
+                    <a href="#" class="footer_link">вопрос-ответ</a>
+                    <a href="price.html" class="footer_link">список магазинов</a>
+                    <a href="#" class="footer_link">диагностика проблемы</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_contacts-block">
+            <p class="footer_hotline-text">Горячая линия по вопросам доставки из зарубежных интернет-магазинов:</p>
+            <p class="footer_phone">+7 800 555 35 35</p>
+            <p class="footer_schedule">С 7:00 до 19:00 (MSK)</p>
+            <p class="footer_support-service">Служба поддержки</p>
+        </div>
+
+        <hr class="footer_divider">
+
+        <div class="footer_bottom-block">
+            <div class="footer_socials">
+                <a href="#"><img src="src/img/icons8-youtube%201.png" alt="YouTube" class="footer_social-icon"></a>
+                <a href="#"><img src="src/img/vk-horizontal-logo%201.png" alt="VK" class="footer_social-icon"></a>
+                <a href="#"><img src="src/img/max-messenger-horizontal-logo%201.png" alt="VK"
+                                 class="footer_social-icon"></a>
+                <a href="#"><img src="src/img/telegram-svgrepo-com%201.png" alt="Telegram"
+                                 class="footer_social-icon"></a>
+            </div>
+            <p class="footer_copyright">© 2025, Курьерская компания МультиТранс</p>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>

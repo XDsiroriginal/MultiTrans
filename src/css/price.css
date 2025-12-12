@@ -1222,7 +1222,7 @@
     .volume_weight_rule_item,
     .volume_weight_rule_item_last {
         font-size: 18px;
-        margin-left: 0 !important;
+        margin-left: 0;
     }
 
     .volume_weight_discount {
